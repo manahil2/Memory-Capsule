@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Capsule - Memory Capsule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Create New Capsule</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+  <main>
+    <section id="create-capsule">
+      <h2>Create Your Memory Capsule</h2>
+      <form id="capsule-form">
+        <input type="text" id="capsule-name" placeholder="Capsule Name" required>
+        <textarea id="capsule-description" placeholder="Description (optional)"></textarea>
+        <label for="capsule-type">Capsule Type:</label>
+        <select id="capsule-type" required>
+          <option value="private">Private</option>
+          <option value="public">Public</option>
+        </select>
+        <label for="media-upload">Upload Media:</label>
+        <input type="file" id="media-upload" multiple accept="image/*, video/*, audio/*">
+        <button type="submit">Create Capsule</button>
+      </form>
+    </section>
+  </main>
+  <script src="capsule.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Memory Capsule</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Include JSZip library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>My Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="capsule.html">Create New Capsule</a>
+    </nav>
+  </header>
+  <main>
+    <section id="private-capsules">
+      <h2>Private Capsules</h2>
+      <div id="private-capsule-list">
+        <!-- Private capsules will be dynamically added here -->
+      </div>
+    </section>
+    <section id="public-capsules">
+      <h2>Public Capsules</h2>
+      <div id="public-capsule-list">
+        <!-- Public capsules will be dynamically added here -->
+      </div>
+    </section>
+  </main>
+  <script src="dashboard.js"></script>
+</body>
+</html>
